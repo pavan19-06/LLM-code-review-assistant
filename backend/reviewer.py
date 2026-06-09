@@ -7,7 +7,18 @@ def ask_llm(prompt):
         OLLAMA_URL,
         json={
             "model": "qwen3:8b",
-            "prompt": f"Answer directly. Do not show thinking process.\n\n{prompt}",
+            "prompt": f"""
+You are a senior software engineer.
+
+Review the following code and provide:
+
+1. Summary
+2. Issues Found
+3. Suggestions for Improvement
+
+Code:
+{prompt}
+""",
             "stream": False
         }
     )
