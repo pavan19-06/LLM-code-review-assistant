@@ -5,8 +5,8 @@ from reviewer import ask_llm
 
 app = FastAPI()
 
-class PromptRequest(BaseModel):
-    prompt: str
+class CodeReviewRequest(BaseModel):
+    code: str
 
 @app.get("/")
 def home():
@@ -14,9 +14,9 @@ def home():
         "message": "LLM Code Review Assistant Running"
     }
 
-@app.post("/ask")
-def ask(request: PromptRequest):
-    response = ask_llm(request.prompt)
+@app.post("/review")
+def review(request: CodeReviewRequest):
+    response = ask_llm(request.code)
 
     return {
         "response": response
