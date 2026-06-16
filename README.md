@@ -1,4 +1,3 @@
-﻿# LLM Code Review Assistant
 # 🤖 LLM Code Review Assistant
 
 An AI-powered code review assistant built using FastAPI and Ollama.
