@@ -130,25 +130,15 @@ in your browser.
 
 ### Home Interface
 
-Replace with your screenshot:
+## 📸 Screenshots
 
-```text
-frontend/screenshots/home.png
-```
+### Home Interface
 
-<img width="100%" src="screenshots/home.png">
-
----
+![Home UI](screenshots/home.png)
 
 ### Code Review Result
 
-Replace with your screenshot:
-
-```text
-frontend/screenshots/review.png
-```
-
-<img width="100%" src="screenshots/review.png">
+![Review Result](screenshots/review.png)
 
 ---
 
