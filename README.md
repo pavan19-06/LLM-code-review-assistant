@@ -1,23 +1,31 @@
 # 🤖 LLM Code Review Assistant
 
-An AI-powered code review assistant built using FastAPI, Ollama, and Qwen 3B. The application analyzes source code and generates intelligent feedback including code summaries, issues, and improvement suggestions.
+An AI-powered code review assistant built using FastAPI, Ollama, and Qwen 3B.
+
+The application analyzes source code and provides:
+
+- Code Summary
+- Issues Found
+- Security Concerns
+- Improvement Suggestions
+- Downloadable Review Reports
 
 ---
 
 ## 🚀 Features
 
-- AI-powered code reviews using Qwen 3B
+- AI-powered code review using Qwen 3B
 - FastAPI backend
 - REST API integration
-- Modern frontend UI
+- Modern dark-themed frontend
 - Automatic issue detection
-- Improvement recommendations
+- Security recommendations
 - Downloadable review reports
-- Local LLM execution with Ollama
+- Local LLM execution using Ollama
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 ### Backend
 - Python
@@ -34,10 +42,6 @@ An AI-powered code review assistant built using FastAPI, Ollama, and Qwen 3B. Th
 - CSS
 - JavaScript
 
-### Version Control
-- Git
-- GitHub
-
 ---
 
 ## 📂 Project Structure
@@ -46,13 +50,17 @@ An AI-powered code review assistant built using FastAPI, Ollama, and Qwen 3B. Th
 LLM-code-review-assistant/
 │
 ├── backend/
-│   ├── main.py
-│   ├── reviewer.py
+│   ├── app.py
+│   └── reviewer.py
 │
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
-│   ├── script.js
+│   └── script.js
+│
+├── screenshots/
+│   ├── home.png
+│   └── review.png
 │
 ├── reports/
 │
@@ -68,7 +76,6 @@ LLM-code-review-assistant/
 
 ```bash
 git clone https://github.com/pavan19-06/LLM-code-review-assistant.git
-
 cd LLM-code-review-assistant
 ```
 
@@ -80,11 +87,11 @@ pip install fastapi uvicorn requests
 
 ### Install Ollama
 
-Download Ollama:
+Download and install Ollama:
 
 https://ollama.com
 
-Pull Qwen model:
+Pull Qwen Model:
 
 ```bash
 ollama pull qwen3:8b
@@ -96,25 +103,18 @@ ollama pull qwen3:8b
 
 ```bash
 cd backend
-
-uvicorn main:app --reload
+uvicorn app:app --reload
 ```
 
-Backend will run at:
+Backend runs at:
 
 ```text
 http://127.0.0.1:8000
 ```
 
-Swagger API Documentation:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
 ---
 
-## 🖥️ Run Frontend
+## 🌐 Run Frontend
 
 Open:
 
@@ -130,10 +130,6 @@ in your browser.
 
 ### Home Interface
 
-## 📸 Screenshots
-
-### Home Interface
-
 ![Home UI](screenshots/home.png)
 
 ### Code Review Result
@@ -142,29 +138,25 @@ in your browser.
 
 ---
 
-## 📖 Example Workflow
+## 📝 Example Workflow
 
-1. Paste source code into the input area.
-2. Click Review Code.
-3. Code is sent to FastAPI backend.
-4. Backend forwards prompt to Qwen through Ollama.
-5. AI generates:
-   - Summary
-   - Issues Found
-   - Suggestions
-6. Results displayed instantly on UI.
+1. Paste source code into the input area
+2. Click **Review Code**
+3. Code is sent to FastAPI backend
+4. Ollama analyzes the code using Qwen
+5. Review is displayed on screen
+6. Download report if needed
 
 ---
 
 ## 🎯 Future Improvements
 
-- Multi-language support
+- Multiple language support
 - Syntax highlighting
-- Severity scoring
 - Authentication system
-- Docker deployment
-- Cloud-hosted API
-- Export PDF reports
+- Streamlit deployment
+- Docker support
+- Cloud-hosted inference
 
 ---
 
@@ -172,20 +164,12 @@ in your browser.
 
 **Pavan R**
 
-B.Tech Artificial Intelligence & Machine Learning
+B.Tech AIML Student
 
-GitHub:
-https://github.com/pavan19-06
+Built as a hands-on AI + FastAPI + Ollama project to learn local LLM integration and software engineering workflows.
 
 ---
 
-## ⭐ Project Status
+## ⭐ If you like this project
 
-Completed as an academic AI/ML portfolio project demonstrating:
-
-- FastAPI Development
-- REST API Integration
-- Local LLM Deployment
-- Frontend Development
-- Git & GitHub Workflow
-- AI Application Development
+Give the repository a star on GitHub ⭐
