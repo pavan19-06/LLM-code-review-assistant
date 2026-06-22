@@ -130,11 +130,11 @@ in your browser.
 
 ### Home Interface
 
-![Home UI](screenshots/home.png)
+![Home UI](screenshot/ui-dashboard.png)
 
 ### Code Review Result
 
-![Review Result](screenshots/review.png)
+![Review Result](screenshots/code-review-output.png)
 
 ---
 
