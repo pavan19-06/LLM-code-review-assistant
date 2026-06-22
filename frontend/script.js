@@ -1,10 +1,13 @@
 document.getElementById("reviewBtn").addEventListener("click", async () => {
 
-    const code = document.getElementById("codeInput").value;
+    const code =
+        document.getElementById("codeInput").value;
 
-    const output = document.getElementById("output");
+    const output =
+        document.getElementById("output");
 
-    output.innerText = "Reviewing...";
+    output.innerText =
+        "⏳ Reviewing code using AI...";
 
     try {
 
@@ -21,15 +24,43 @@ document.getElementById("reviewBtn").addEventListener("click", async () => {
             }
         );
 
-        const data = await response.json();
+        const data =
+            await response.json();
 
-        output.innerText = data.response;
+        output.innerText =
+            data.response;
 
     } catch (error) {
 
-        output.innerText = "Error connecting to backend.";
+        output.innerText =
+            "Error connecting to backend.";
 
         console.error(error);
     }
+
+});
+
+document.getElementById("downloadBtn").addEventListener("click", () => {
+
+    const reviewText =
+        document.getElementById("output").innerText;
+
+    const blob = new Blob(
+        [reviewText],
+        {
+            type: "text/plain"
+        }
+    );
+
+    const link =
+        document.createElement("a");
+
+    link.href =
+        URL.createObjectURL(blob);
+
+    link.download =
+        "review.txt";
+
+    link.click();
 
 });
