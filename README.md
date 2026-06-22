@@ -132,10 +132,6 @@ in your browser.
 
 ![Home UI](screenshot/ui-dashboard.png)
 
-### Code Review Result
-
-![Review Result](screenshots/code-review-output.png)
-
 ---
 
 ## 📝 Example Workflow
