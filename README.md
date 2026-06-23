@@ -59,8 +59,8 @@ LLM-code-review-assistant/
 │   └── script.js
 │
 ├── screenshots/
-│   ├── home.png
-│   └── review.png
+│   ├── ui-dashboard.png
+│  
 │
 ├── reports/
 │
